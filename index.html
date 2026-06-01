@@ -45,11 +45,9 @@ nav{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;align-
 .hero-title{font-size:13px;color:var(--rose);letter-spacing:0.06em;margin-bottom:16px;font-weight:500;}
 .hero-bio{font-size:14px;color:rgba(255,255,255,0.7);line-height:1.75;max-width:520px;margin-bottom:24px;}
 .hero-links{display:flex;gap:12px;flex-wrap:wrap;}
-.hero-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:8px 18px;border-radius:24px;text-decoration:none;font-weight:500;transition:all 0.2s;letter-spacing:0.03em;}
+.hero-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:8px 18px;border-radius:24px;text-decoration:none;font-weight:500;transition:all 0.2s;letter-spacing:0.03em;cursor:pointer;}
 .hero-link.primary{background:var(--rose);color:var(--navy);}
 .hero-link.primary:hover{background:var(--rose-mid);}
-.hero-link.outline{border:1px solid rgba(244,192,209,0.4);color:var(--rose);}
-.hero-link.outline:hover{background:rgba(244,192,209,0.1);}
 
 .container{max-width:860px;margin:0 auto;padding:0 40px;}
 section{padding:64px 0;border-bottom:1px solid var(--border);}
@@ -58,7 +56,7 @@ section:last-of-type{border-bottom:none;}
 .section-title{font-family:'DM Serif Display',serif;font-size:28px;color:var(--navy);margin-bottom:32px;line-height:1.2;}
 
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;}
-.about-text{font-size:15px;color:var(--text-muted);line-height:1.8;}
+.about-text{font-size:15px;color:var(--text-muted);line-height:1.8;text-align:justify;}
 .about-facts{display:flex;flex-direction:column;gap:14px;}
 .fact{display:flex;align-items:flex-start;gap:12px;padding:14px;background:var(--white);border:1px solid var(--border);border-radius:12px;}
 .fact-icon{width:32px;height:32px;border-radius:8px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:15px;color:var(--blue-accent);}
@@ -70,7 +68,7 @@ section:last-of-type{border-bottom:none;}
 .exp-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(12,35,64,0.08);}
 .exp-number{font-family:'DM Serif Display',serif;font-size:36px;color:var(--rose);line-height:1;margin-bottom:12px;}
 .exp-title{font-size:15px;font-weight:500;color:var(--navy);margin-bottom:8px;}
-.exp-desc{font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:16px;}
+.exp-desc{font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:16px;text-align:justify;}
 .exp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;}
 .exp-tag{font-size:11px;padding:4px 12px;border-radius:20px;background:#fbeaf0;color:var(--rose-dark);border:1px solid #f4c0d1;font-weight:500;}
 
@@ -85,7 +83,7 @@ section:last-of-type{border-bottom:none;}
 .proj-card:hover{box-shadow:0 8px 24px rgba(12,35,64,0.08);}
 .proj-card.thesis{border-left:4px solid var(--rose-dark);}
 .proj-title{font-size:16px;font-weight:500;color:var(--navy);margin-bottom:8px;line-height:1.4;}
-.proj-desc{font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:14px;}
+.proj-desc{font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:14px;text-align:justify;}
 .proj-tech{display:flex;gap:6px;flex-wrap:wrap;}
 .proj-tech span{font-size:11px;padding:3px 10px;border-radius:20px;background:var(--blue-light);color:var(--blue-accent);}
 .proj-badge{white-space:nowrap;font-size:11px;padding:5px 12px;border-radius:20px;background:#fbeaf0;color:var(--rose-dark);font-weight:500;border:1px solid #f4c0d1;}
@@ -96,7 +94,7 @@ section:last-of-type{border-bottom:none;}
 .blog-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(12,35,64,0.08);}
 .blog-cat{font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--rose-dark);margin-bottom:10px;}
 .blog-title{font-family:'DM Serif Display',serif;font-size:18px;color:var(--navy);margin-bottom:10px;line-height:1.3;}
-.blog-preview{font-size:13px;color:var(--text-muted);line-height:1.6;}
+.blog-preview{font-size:13px;color:var(--text-muted);line-height:1.6;text-align:justify;}
 .blog-read{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--rose-dark);font-weight:500;margin-top:14px;}
 
 .contact-section{background:var(--navy);padding:64px 0;}
@@ -122,9 +120,9 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3);}
 .inner-title{font-family:'DM Serif Display',serif;font-size:32px;color:var(--white);line-height:1.2;max-width:700px;margin-bottom:12px;}
 .inner-subtitle{font-size:14px;color:rgba(255,255,255,0.6);max-width:620px;line-height:1.75;}
 .inner-body{max-width:700px;margin:0 auto;padding:56px 40px;}
-.inner-body p{font-size:15px;color:var(--text-muted);line-height:1.85;margin-bottom:20px;}
+.inner-body p{font-size:15px;color:var(--text-muted);line-height:1.85;margin-bottom:20px;text-align:justify;}
 .inner-body h3{font-family:'DM Serif Display',serif;font-size:22px;color:var(--navy);margin:36px 0 12px;}
-.inner-notice{background:#fbeaf0;border:1px solid #f4c0d1;border-radius:12px;padding:16px 20px;margin:28px 0;font-size:13px;color:var(--rose-dark);line-height:1.6;}
+.inner-notice{border-radius:12px;padding:16px 20px;margin:28px 0;font-size:13px;line-height:1.6;text-align:justify;background:#fbeaf0;border:1px solid #f4c0d1;color:var(--rose-dark);}
 .inner-tags{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0;}
 .inner-tag{font-size:12px;padding:6px 14px;border-radius:20px;background:var(--blue-light);color:var(--blue-accent);font-weight:500;}
 .inner-repo-btn{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:var(--white);padding:12px 24px;border-radius:24px;text-decoration:none;font-size:13px;font-weight:500;margin-top:8px;transition:background 0.2s;}
@@ -159,62 +157,61 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3);}
 <body>
 
 <nav>
-  <span class="nav-logo" onclick="showPage('main');scrollToTop()">Ilse Emerich</span>
+  <span class="nav-logo" onclick="navigateToSection(null)">Ilse Emerich</span>
   <ul class="nav-links">
-    <li><a onclick="showPage('main');scrollTo('about')" class="active">About</a></li>
-    <li><a onclick="showPage('main');scrollTo('expertise')">Expertise</a></li>
-    <li><a onclick="showPage('main');scrollTo('projects')">Projects</a></li>
-    <li><a onclick="showPage('main');scrollTo('blog')">Blog</a></li>
-    <li><a onclick="showPage('main');scrollTo('contact')">Contact</a></li>
+    <li><a id="nav-about" onclick="navigateToSection('about')" class="active">About</a></li>
+    <li><a id="nav-expertise" onclick="navigateToSection('expertise')">Expertise</a></li>
+    <li><a id="nav-projects" onclick="navigateToSection('projects')">Projects</a></li>
+    <li><a id="nav-blog" onclick="navigateToSection('blog')">Blog</a></li>
+    <li><a id="nav-contact" onclick="navigateToSection('contact')">Contact</a></li>
   </ul>
   <div class="lang-toggle">
-    <button class="lang-btn active" onclick="setLang('en',event)">EN</button>
-    <button class="lang-btn" onclick="setLang('fr',event)">FR</button>
+    <button id="btn-en" class="lang-btn active" onclick="setLang('en',event)">EN</button>
+    <button id="btn-fr" class="lang-btn" onclick="setLang('fr',event)">FR</button>
   </div>
 </nav>
 
-<!-- ======================== MAIN PAGE ======================== -->
 <div id="page-main" class="page active">
 
 <div class="hero">
   <div class="hero-photo-wrap">
     <img class="hero-photo" src="./assets/profile.jpg" alt="Ilse Emerich"/>
-    <span class="hero-badge">Open to opportunities</span>
+    <span class="hero-badge" id="lbl-status">Open to opportunities</span>
   </div>
   <div class="hero-content">
-    <p class="hero-title">DATA ANALYST · PARIS, FRANCE</p>
+    <p class="hero-title" id="lbl-hero-title">DATA ANALYST · PARIS, FRANCE</p>
     <h1 class="hero-name">Ilse Emerich</h1>
-    <p class="hero-bio" id="hero-bio">Trilingual Data Analyst (ES/FR/EN) with 4+ years of experience transforming complex datasets into actionable insights. Currently Data Analyst at Air Liquide, finishing my Master in Data Science & Business Intelligence at EDC Paris Business School.</p>
+    <p class="hero-bio" id="hero-bio">Data Analyst with 4+ years of experience transforming complex datasets into actionable insights. Currently Data Analyst at Air Liquide, finishing my Master's Thesis in Data Science & Business Intelligence at EDC Paris Business School.</p>
     <div class="hero-links">
       <a href="https://www.linkedin.com/in/ilse-emerich" target="_blank" class="hero-link primary">LinkedIn</a>
-      <a href="https://github.com/Ilseemerich5" target="_blank" class="hero-link outline">GitHub</a>
-      <a href="#contact" onclick="showPage('main')" class="hero-link outline">Contact me</a>
+      <a href="https://github.com/Ilseemerich5" target="_blank" class="hero-link primary" id="btn-github">GitHub</a>
+      <a onclick="navigateToSection('contact')" class="hero-link primary" id="btn-contact">Contact me</a>
     </div>
   </div>
 </div>
 
 <section id="about">
   <div class="container">
-    <span class="section-label">About me</span>
+    <span class="section-label" id="lbl-about-lbl">About me</span>
     <h2 class="section-title" id="about-title">Who I am</h2>
     <div class="about-grid">
-      <p class="about-text" id="about-text">Trilingual Data Analyst (Spanish, French, English) with 4+ years of experience transforming complex datasets into actionable insights to support business decision-making in international environments. Naturally curious and continuously learning, with strong experience in building dashboards, defining KPIs, and communicating insights to cross-functional stakeholders. Industrial Engineer with a Master in Data Science & Business Intelligence, with solid expertise in Excel, SQL, Python, and data visualization.</p>
+      <p class="about-text" id="about-text">Trilingual Data Analyst (Spanish, French, English) with 4+ years of experience transforming complex datasets into actionable insights to support business decision-making in international environments. Naturally curious and continuously learning, with strong experience in building dashboards, defining KPIs, and communicating insights to cross-functional stakeholders. Industrial Engineer with a Master's Thesis in Data Science & Business Intelligence, with solid expertise in Excel, SQL, Python, and data visualization.</p>
       <div class="about-facts">
         <div class="fact">
           <div class="fact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
-          <div><div class="fact-label">Location</div><div class="fact-value">Paris, France</div></div>
+          <div><div class="fact-label" id="lbl-fact-loc">Location</div><div class="fact-value">Paris, France</div></div>
         </div>
         <div class="fact">
           <div class="fact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
-          <div><div class="fact-label">Current role</div><div class="fact-value">Data Analyst · Air Liquide</div></div>
+          <div><div class="fact-label" id="lbl-fact-role">Current role</div><div class="fact-value" id="val-fact-role">Data Analyst · Air Liquide</div></div>
         </div>
         <div class="fact">
           <div class="fact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-          <div><div class="fact-label">Education</div><div class="fact-value">Master in Data Science & BI · EDC Paris</div></div>
+          <div><div class="fact-label" id="lbl-fact-edu">Education</div><div class="fact-value" id="val-fact-edu">Master in Data Science & BI · EDC Paris</div></div>
         </div>
         <div class="fact">
           <div class="fact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-          <div><div class="fact-label">Languages</div><div class="fact-value">Spanish · French · English · German</div></div>
+          <div><div class="fact-label" id="lbl-fact-lang">Languages</div><div class="fact-value" id="val-fact-lang">Spanish · French · English · German</div></div>
         </div>
       </div>
     </div>
@@ -223,31 +220,31 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3);}
 
 <section id="expertise">
   <div class="container">
-    <span class="section-label">Expertise</span>
-    <h2 class="section-title">What I do best</h2>
+    <span class="section-label" id="lbl-exp-lbl">Expertise</span>
+    <h2 class="section-title" id="lbl-exp-title">What I do best</h2>
     <div class="expertise-grid">
       <div class="exp-card">
         <div class="exp-number">01</div>
-        <div class="exp-title">Business Intelligence & Data Visualization</div>
-        <div class="exp-desc">Building dashboards and KPI frameworks that help teams make faster, better decisions. From design to deployment.</div>
+        <div class="exp-title" id="exp-t1">Business Intelligence & Data Visualization</div>
+        <div class="exp-desc" id="exp-d1">Building dashboards and KPI frameworks that help teams make faster, better decisions. From design to deployment.</div>
         <div class="exp-tags"><span class="exp-tag">Power BI</span><span class="exp-tag">Tableau</span><span class="exp-tag">DAX</span><span class="exp-tag">Power Query</span></div>
       </div>
       <div class="exp-card">
         <div class="exp-number">02</div>
-        <div class="exp-title">Data Cleaning & ETL Pipelines</div>
-        <div class="exp-desc">Designing reliable pipelines that transform raw, messy data into clean, trustworthy sources.</div>
+        <div class="exp-title" id="exp-t2">Data Cleaning & ETL Pipelines</div>
+        <div class="exp-desc" id="exp-d2">Designing reliable pipelines that transform raw, messy data into clean, trustworthy sources.</div>
         <div class="exp-tags"><span class="exp-tag">Python</span><span class="exp-tag">Pandas</span><span class="exp-tag">NumPy</span><span class="exp-tag">Google Apps Script</span></div>
       </div>
       <div class="exp-card">
         <div class="exp-number">03</div>
-        <div class="exp-title">SQL & Data Modeling</div>
-        <div class="exp-desc">Structuring and querying large datasets with a focus on data quality, governance, and multi-source consolidation.</div>
+        <div class="exp-title" id="exp-t3">SQL & Data Modeling</div>
+        <div class="exp-desc" id="exp-d3">Structuring and querying large datasets with a focus on data quality, governance, and multi-source consolidation.</div>
         <div class="exp-tags"><span class="exp-tag">SQL</span><span class="exp-tag">Data Modeling</span><span class="exp-tag">Data Governance</span></div>
       </div>
       <div class="exp-card">
         <div class="exp-number">04</div>
-        <div class="exp-title">Automation & Process Optimization</div>
-        <div class="exp-desc">Identifying manual bottlenecks and building automations that save time and reduce human error in reporting workflows.</div>
+        <div class="exp-title" id="exp-t4">Automation & Process Optimization</div>
+        <div class="exp-desc" id="exp-d4">Identifying manual bottlenecks and building automations that save time and reduce human error in reporting workflows.</div>
         <div class="exp-tags"><span class="exp-tag">ETL</span><span class="exp-tag">Automation</span><span class="exp-tag">Reporting</span><span class="exp-tag">Six Sigma</span></div>
       </div>
     </div>
@@ -256,8 +253,8 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3);}
 
 <div class="skills-section">
   <div class="container">
-    <span class="section-label">Skills & tools</span>
-    <h2 class="section-title">Tech stack</h2>
+    <span class="section-label" id="lbl-skills-lbl">Skills & tools</span>
+    <h2 class="section-title" id="lbl-skills-title">Tech stack</h2>
     <div class="skills-grid">
       <span class="skill-pill">Python</span>
       <span class="skill-pill">SQL</span>
@@ -283,38 +280,38 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3);}
 
 <section id="projects">
   <div class="container">
-    <span class="section-label">Projects</span>
-    <h2 class="section-title">Featured work</h2>
+    <span class="section-label" id="lbl-proj-lbl">Projects</span>
+    <h2 class="section-title" id="lbl-proj-title">Featured work</h2>
     <div class="projects-grid">
       <div class="proj-card thesis" onclick="showPage('thesis')">
         <div>
-          <p class="proj-title">Modeling the Temporal Persistence of Customer Sentiment from Online Reviews in E-Commerce Sales Forecasting</p>
-          <p class="proj-desc">Quantitative research combining NLP and Deep Learning to analyze how the temporal persistence of customer sentiment from online reviews impacts sales forecasting accuracy in e-commerce. Built on an ETL pipeline processing 100k+ transactions, fine-tuned BERTimbau for sentiment classification, and combined Attention-based BiLSTM with XGBoost to capture temporal patterns across multiple forecasting horizons.</p>
+          <p class="proj-title" id="proj-t1">Modeling the Temporal Persistence of Customer Sentiment from Online Reviews in E-Commerce Sales Forecasting</p>
+          <p class="proj-desc" id="proj-d1">Quantitative research combining NLP and Deep Learning to analyze how the temporal persistence of customer sentiment from online reviews impacts sales forecasting accuracy in e-commerce. Built on an ETL pipeline processing 100k+ transactions, fine-tuned BERTimbau for sentiment classification, and combined Attention-based BiLSTM with XGBoost to capture temporal patterns across multiple forecasting horizons.</p>
           <div class="proj-tech"><span>Python</span><span>NLP</span><span>Deep Learning</span><span>ETL</span><span>Machine Learning</span></div>
         </div>
         <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
-          <span class="proj-badge">Master Thesis</span>
-          <span class="proj-arrow">View details →</span>
+          <span class="proj-badge" id="lbl-badge-thesis">Master's Thesis</span>
+          <span class="proj-arrow" id="lbl-arrow-t1">View details →</span>
         </div>
       </div>
       <div class="proj-card" onclick="showPage('churn')">
         <div>
-          <p class="proj-title">E-commerce Customer Churn Analysis with SQL, Power BI and Python</p>
-          <p class="proj-desc">End-to-end analysis identifying churn patterns and key drivers across customer segments, with an interactive Power BI dashboard for business stakeholders.</p>
+          <p class="proj-title" id="proj-t2">E-commerce Customer Churn Analysis with SQL, Power BI and Python</p>
+          <p class="proj-desc" id="proj-d2">End-to-end analysis identifying churn patterns and key drivers across customer segments, with an interactive Power BI dashboard for business stakeholders.</p>
           <div class="proj-tech"><span>SQL</span><span>Python</span><span>Power BI</span></div>
         </div>
         <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
-          <span class="proj-arrow">View details →</span>
+          <span class="proj-arrow" id="lbl-arrow-t2">View details →</span>
         </div>
       </div>
       <div class="proj-card" onclick="showPage('retail')">
         <div>
-          <p class="proj-title">Retail Sales Performance Analysis with Python, Power BI and SQL</p>
-          <p class="proj-desc">Sales performance analysis tracking KPIs by region, product line, and segment to support strategic and operational decisions.</p>
+          <p class="proj-title" id="proj-t3">Retail Sales Performance Analysis with Python, Power BI and SQL</p>
+          <p class="proj-desc" id="proj-d3">Sales performance analysis tracking KPIs by region, product line, and segment to support strategic and operational decisions.</p>
           <div class="proj-tech"><span>Python</span><span>SQL</span><span>Power BI</span></div>
         </div>
         <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
-          <span class="proj-arrow">View details →</span>
+          <span class="proj-arrow" id="lbl-arrow-t3">View details →</span>
         </div>
       </div>
     </div>
@@ -323,26 +320,26 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3);}
 
 <section id="blog">
   <div class="container">
-    <span class="section-label">Blog</span>
-    <h2 class="section-title">Thoughts & learnings</h2>
+    <span class="section-label" id="lbl-blog-lbl">Blog</span>
+    <h2 class="section-title" id="lbl-blog-title">Thoughts & learnings</h2>
     <div class="blog-grid">
       <div class="blog-card" onclick="showPage('blog1')">
-        <div class="blog-cat">Career</div>
-        <h3 class="blog-title">From Industrial Engineer to Data Analyst: my career switch</h3>
-        <p class="blog-preview">How I went from studying Industrial Engineering in Mexico to working as a Data Analyst in Paris, and why I never really felt like I was switching fields.</p>
-        <span class="blog-read">Read more →</span>
+        <div class="blog-cat" id="blog-c1">Career</div>
+        <h3 class="blog-title" id="blog-t1">From Industrial Engineer to Data Analyst: my career switch</h3>
+        <p class="blog-preview" id="blog-p1">How I went from studying Industrial Engineering in Mexico to working as a Data Analyst in Paris, and why I never really felt like I was switching fields.</p>
+        <span class="blog-read" id="lbl-read-b1">Read more →</span>
       </div>
       <div class="blog-card" onclick="showPage('blog2')">
-        <div class="blog-cat">Technical</div>
-        <h3 class="blog-title">SQL vs Python for data cleaning: what I've learned</h3>
-        <p class="blog-preview">A practical comparison from real projects. When SQL is enough, when Python makes more sense, and how I learned to stop asking which tool is better.</p>
-        <span class="blog-read">Read more →</span>
+        <div class="blog-cat" id="blog-c2">Technical</div>
+        <h3 class="blog-title" id="blog-t2">SQL vs Python for data cleaning: what I've learned</h3>
+        <p class="blog-preview" id="blog-p2">A practical comparison from real projects. When SQL is enough, when Python makes more sense, and how I learned to stop asking which tool is better.</p>
+        <span class="blog-read" id="lbl-read-b2">Read more →</span>
       </div>
       <div class="blog-card" onclick="showPage('blog3')">
-        <div class="blog-cat">Career</div>
-        <h3 class="blog-title">Why the industry never mattered as much as the question behind the data</h3>
-        <p class="blog-preview">From healthcare KPIs to training budgets at a global company, what I have learned is that curiosity about the why behind the data travels with you everywhere.</p>
-        <span class="blog-read">Read more →</span>
+        <div class="blog-cat" id="blog-c3">Career</div>
+        <h3 class="blog-title" id="blog-t3">Why the industry never mattered as much as the question behind the data</h3>
+        <p class="blog-preview" id="blog-p3">From healthcare KPIs to training budgets at a global company, what I have learned is that curiosity about the why behind the data travels with you everywhere.</p>
+        <span class="blog-read" id="lbl-read-b3">Read more →</span>
       </div>
     </div>
   </div>
@@ -350,8 +347,8 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3);}
 
 <div class="contact-section" id="contact">
   <div class="container">
-    <span class="section-label">Contact</span>
-    <h2 class="section-title">Let's connect</h2>
+    <span class="section-label" id="lbl-contact-lbl">Contact</span>
+    <h2 class="section-title" id="lbl-contact-title">Let's connect</h2>
     <div class="contact-grid">
       <a href="mailto:ilsemerichv@hotmail.com" class="contact-card">
         <div class="contact-icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></div>
@@ -367,215 +364,432 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3);}
       </a>
       <div class="contact-card" style="cursor:default;">
         <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
-        <div><div class="contact-label">Location</div><div class="contact-value">Paris, France</div></div>
+        <div><div class="contact-label" id="lbl-fact-loc2">Location</div><div class="contact-value" id="val-fact-loc2">Paris, France</div></div>
       </div>
     </div>
   </div>
 </div>
 
-<footer><p>© 2025 Ilse Emerich · Data Analyst · Paris</p></footer>
+<footer><p>© <span id="current-year"></span> · Ilse Emerich · Data Analyst · Paris</p></footer>
 </div>
 
 
-<!-- ======================== THESIS PAGE ======================== -->
 <div id="page-thesis" class="page">
   <div class="inner-page">
     <div class="inner-hero">
-      <button class="inner-back" onclick="showPage('main');scrollTo('projects')">
-        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>Back to projects
+      <button class="inner-back" onclick="navigateToSection('projects')">
+        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg><span id="lbl-back-proj1">Back to projects</span>
       </button>
-      <div class="inner-badge">Master Thesis</div>
-      <h1 class="inner-title">Modeling the Temporal Persistence of Customer Sentiment from Online Reviews in E-Commerce Sales Forecasting</h1>
-      <p class="inner-subtitle">EDC Paris Business School · Master in Data Science & Business Intelligence · 2025</p>
+      <div class="inner-badge" id="lbl-badge-thesis-inner">Master's Thesis</div>
+      <h1 class="inner-title" id="thesis-title">Modeling the Temporal Persistence of Customer Sentiment from Online Reviews in E-Commerce Sales Forecasting</h1>
+      <p class="inner-subtitle" id="thesis-subtitle">EDC Paris Business School · Master in Data Science & Business Intelligence · 2026</p>
     </div>
     <div class="inner-body">
-      <div class="inner-notice">This thesis is currently under review by my supervisor and pending final approval by EDC Paris Business School. The full document will be shared publicly once the process is complete. Thank you for your understanding.</div>
-      <h3>Research Question</h3>
-      <p>To what extent does the usefulness of customer sentiment from online reviews persist over time when incorporated into sales forecasting models in e-commerce contexts?</p>
-      <h3>Overview</h3>
-      <p>This research adopts a quantitative and hybrid approach combining primary and secondary data to analyse how customer reviews influence purchasing decisions and sales forecasting in e-commerce. The study is structured around three main components.</p>
-      <p>A primary survey with 174 respondents was designed to capture consumer perceptions on the credibility and temporal relevance of online reviews. The goal was to understand how people weigh reviews differently depending on how recent they are, and whether that perception translates into measurable purchasing behavior.</p>
-      <p>The transactional analysis is based on the Olist Brazilian e-commerce dataset covering 2016 to 2018, including orders, products and reviews. An ETL pipeline was built to process over 100,000 transactions, consolidating and validating the data before any modelling could begin.</p>
-      <p>The modelling phase combines NLP and forecasting techniques. Sentiment classification was performed using BERTimbau fine-tuned on 2,700 manually labelled reviews. The forecasting model integrates an Attention-based BiLSTM with XGBoost to capture temporal patterns and correct residual errors. An ablation study was conducted across three model configurations to measure the incremental impact of review metrics and sentiment on predictive accuracy, evaluated through MAE, RMSE and WMAPE across multiple forecasting horizons of 1, 7, 14 and 30 days.</p>
-      <h3>Tools & Technologies</h3>
+      <div class="inner-notice" id="thesis-notice">This thesis is currently under review by my supervisor and pending final approval by EDC Paris Business School. The full document will be shared publicly once the process is complete. Thank you for your understanding.</div>
+      <h3 id="thesis-h1">Research Question</h3>
+      <p id="thesis-p1">To what extent does the usefulness of customer sentiment from online reviews persist over time when incorporated into sales forecasting models in e-commerce contexts?</p>
+      <h2 style="display:none;">Data Model</h2>
+      <h3 id="thesis-h2">Overview</h3>
+      <p id="thesis-p2">This research adopts a quantitative and hybrid approach combining primary and secondary data to analyse how customer reviews influence purchasing decisions and sales forecasting in e-commerce. The study is structured around three main components.</p>
+      <p id="thesis-p3">A primary survey with 174 respondents was designed to capture consumer perceptions on the credibility and temporal relevance of online reviews. The goal was to understand how people weigh reviews differently depending on how recent they are, and whether that perception translates into measurable purchasing behavior.</p>
+      <p id="thesis-p4">The transactional analysis is based on the Olist Brazilian e-commerce dataset, including orders, products and reviews. An ETL pipeline was built to process over 100,000 transactions, consolidating and validating the data before any modelling could begin.</p>
+      <p id="thesis-p5">The modelling phase combines NLP and forecasting techniques. Sentiment classification was performed using BERTimbau fine-tuned on 2,700 manually labelled reviews. The forecasting model integrates an Attention-based BiLSTM with XGBoost to capture temporal patterns and correct residual errors. An ablation study was conducted across three model configurations to measure the incremental impact of review metrics and sentiment on predictive accuracy, evaluated through MAE, RMSE and WMAPE across multiple forecasting horizons of 1, 7, 14 and 30 days.</p>
+      <h3 id="thesis-h3">Outils & technologies</h3>
       <div class="inner-tags">
         <span class="inner-tag">Python</span><span class="inner-tag">SQL</span><span class="inner-tag">NLP</span><span class="inner-tag">BERTimbau</span><span class="inner-tag">BiLSTM</span><span class="inner-tag">XGBoost</span><span class="inner-tag">Power BI</span><span class="inner-tag">ETL</span>
       </div>
-      <h3>Repository</h3>
-      <p>The code and notebooks for this project are available on GitHub. The full thesis document will be added once approved.</p>
+      <h3 id="thesis-h4">Dépôt GitHub</h3>
+      <p id="thesis-p6">The code and notebooks for this project are available on GitHub. The full thesis document will be added once approved.</p>
       <a href="https://github.com/Ilseemerich5/Thesis-Memoire" target="_blank" class="inner-repo-btn">
         <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        View on GitHub
+        <span id="lbl-view-gh1">View on GitHub</span>
       </a>
     </div>
   </div>
 </div>
 
-<!-- ======================== CHURN PAGE ======================== -->
 <div id="page-churn" class="page">
   <div class="inner-page">
     <div class="inner-hero">
-      <button class="inner-back" onclick="showPage('main');scrollTo('projects')">
-        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>Back to projects
+      <button class="inner-back" onclick="navigateToSection('projects')">
+        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg><span id="lbl-back-proj2">Back to projects</span>
       </button>
-      <div class="inner-badge">Project</div>
-      <h1 class="inner-title">E-commerce Customer Churn Analysis with SQL, Power BI and Python</h1>
-      <p class="inner-subtitle">End-to-end churn analysis on an Indonesian e-commerce platform · 850,000+ transactions</p>
+      <div class="inner-badge" id="lbl-badge-proj-inner1">Project</div>
+      <h1 class="inner-title" id="churn-title">E-commerce Customer Churn Analysis with SQL, Power BI and Python</h1>
+      <p class="inner-subtitle" id="churn-subtitle">End-to-end churn analysis on an Indonesian e-commerce platform · 850,000+ transactions</p>
     </div>
     <div class="inner-body">
-      <h3>Overview</h3>
-      <p>This project analyzes customer behavior on an Indonesian e-commerce platform to identify factors driving churn and propose effective retention strategies. The analysis covers over 850,000 transactions from 2016 to 2022, integrating 4 primary data sources: customers, transactions, products, and clickstream data.</p>
-      <p>The workflow follows a structured process moving from Business Understanding through ETL, EDA, Visualization and Modeling, transforming raw data into actionable business insights.</p>
-      <h3>Tools & Technologies</h3>
+      <h3 id="churn-h1">Overview</h3>
+      <p id="churn-p1">This project analyzes customer behavior on an Indonesian e-commerce platform to identify factors driving churn and propose effective retention strategies. The analysis covers over 850,000 transactions, integrating 4 primary data sources: customers, transactions, products, and clickstream data.</p>
+      <p id="churn-p2">The workflow follows a structured process moving from Business Understanding through ETL, EDA, Visualization and Modeling, transforming raw data into actionable business insights.</p>
+      <h3 id="churn-h2">Outils & technologies</h3>
       <div class="inner-tags">
         <span class="inner-tag">SQL</span><span class="inner-tag">Python</span><span class="inner-tag">Power BI</span><span class="inner-tag">Data Visualization</span><span class="inner-tag">Data Analysis</span><span class="inner-tag">Business Analysis</span>
       </div>
-      <h3>Repository</h3>
+      <h3 id="churn-h3">Dépôt GitHub</h3>
       <a href="https://github.com/Ilseemerich5/E-commerce-Customer-Churn-Analysis-with-SQL-Power-BI-and-Python" target="_blank" class="inner-repo-btn">
         <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        View on GitHub
+        <span id="lbl-view-gh2">View on GitHub</span>
       </a>
     </div>
   </div>
 </div>
 
-<!-- ======================== RETAIL PAGE ======================== -->
 <div id="page-retail" class="page">
   <div class="inner-page">
     <div class="inner-hero">
-      <button class="inner-back" onclick="showPage('main');scrollTo('projects')">
-        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>Back to projects
+      <button class="inner-back" onclick="navigateToSection('projects')">
+        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg><span id="lbl-back-proj3">Back to projects</span>
       </button>
-      <div class="inner-badge">Project</div>
-      <h1 class="inner-title">Retail Sales Performance Analysis with Python, Power BI and SQL</h1>
-      <p class="inner-subtitle">U.S.-based retail store · Sales trends, profitability and customer behavior · 2014 to 2018</p>
+      <div class="inner-badge" id="lbl-badge-proj-inner2">Project</div>
+      <h1 class="inner-title" id="retail-title">Retail Sales Performance Analysis with Python, Power BI and SQL</h1>
+      <p class="inner-subtitle" id="retail-subtitle">U.S.-based retail store · Sales trends, profitability and customer behavior</p>
     </div>
     <div class="inner-body">
-      <h3>Overview</h3>
-      <p>This project analyzes retail sales in a U.S.-based store from 2014 to 2018 to uncover trends in revenue, profitability, and customer behavior. The analysis integrates multiple data sources, including sales orders, customers, products, and regional information.</p>
-      <p>The workflow follows a structured process moving from Business Understanding through ETL, EDA, Statistical Forecasting and Visualization, generating insights to optimize revenue, forecast future sales, and support data-driven business strategies.</p>
-      <h3>Tools & Technologies</h3>
+      <h3 id="retail-h1">Overview</h3>
+      <p id="retail-p1">This project analyzes retail sales in a U.S.-based store to uncover trends in revenue, profitability, and customer behavior. The analysis integrates multiple data sources, including sales orders, customers, products, and regional information.</p>
+      <p id="retail-p2">The workflow follows a structured process moving from Business Understanding through ETL, EDA, Statistical Forecasting and Visualization, generating insights to optimize revenue, forecast future sales, and support data-driven business strategies.</p>
+      <h3 id="retail-h2">Outils & technologies</h3>
       <div class="inner-tags">
         <span class="inner-tag">Python</span><span class="inner-tag">SQL</span><span class="inner-tag">Power BI</span><span class="inner-tag">EDA</span><span class="inner-tag">ETL</span><span class="inner-tag">Statistical Forecasting</span>
       </div>
-      <h3>Repository</h3>
+      <h3 id="retail-h3">Dépôt GitHub</h3>
       <a href="https://github.com/Ilseemerich5/Retail-Sales-Performance-Analysis-with-Python-Power-BI-and-SQL" target="_blank" class="inner-repo-btn">
         <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        View on GitHub
+        <span id="lbl-view-gh3">View on GitHub</span>
       </a>
     </div>
   </div>
 </div>
 
-<!-- ======================== BLOG 1 PAGE ======================== -->
 <div id="page-blog1" class="page">
   <div class="inner-page">
     <div class="inner-hero">
-      <button class="inner-back" onclick="showPage('main');scrollTo('blog')">
-        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>Back to blog
+      <button class="inner-back" onclick="navigateToSection('blog')">
+        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg><span id="lbl-back-blog1">Back to blog</span>
       </button>
-      <div class="inner-badge">Career</div>
-      <h1 class="inner-title">From Industrial Engineer to Data Analyst: my career switch</h1>
-      <p class="inner-subtitle">Ilse Emerich · 2025</p>
+      <div class="inner-badge" id="blog1-cat-inner">Career</div>
+      <h1 class="inner-title" id="blog1-title">From Industrial Engineer to Data Analyst: my career switch</h1>
+      <p class="inner-subtitle">Ilse Emerich · 2026</p>
     </div>
-    <div class="inner-body">
-      <p>When people hear Industrial Engineering and Data Analysis, they often think of two completely different fields. For me, they have always felt closely connected.</p>
-      <p>During my Industrial Engineering degree, I spent a lot of time studying probability, statistics and process analysis. Those subjects quickly became my favorite part of the program because they helped explain how decisions could be supported by evidence rather than intuition. At the same time, my education was strongly focused on continuous improvement methodologies such as Kaizen, Lean Manufacturing and Six Sigma. I learned how to identify inefficiencies, understand root causes and design better processes.</p>
-      <p>After graduation, my career naturally moved toward process coordination and process improvement roles. I genuinely enjoyed understanding how organizations operate and finding opportunities to make them work better. Looking back, those experiences gave me a very analytical way of thinking that still helps me today.</p>
-      <p>A turning point came when I had the opportunity to join <a href="https://salud-digna.us/quienes-somos" target="_blank" class="inline-link">Salud Digna</a> as a Data Analyst. Salud Digna is one of the most recognized healthcare organizations in Mexico, providing affordable diagnostic and preventive health services to millions of people every year. Its impact extends beyond Mexico and its model has gained attention throughout Latin America because of the way it combines accessibility, efficiency and quality healthcare.</p>
-      <p>Working there allowed me to discover the real impact that data can have on decision making. Every project presented new challenges and new opportunities to learn. I had the chance to work with talented professionals who generously shared their knowledge and helped me grow. I remain deeply grateful to my managers, teammates and colleagues, many of whom I still consider friends today.</p>
-      <p>That experience confirmed something I had been feeling for a long time. I wanted to specialize in data.</p>
-      <p>Pursuing a master's degree had always been one of my personal goals, but I believed it was important to first understand what truly motivated me professionally. I think that clarity often comes only after entering the workforce and gaining real experience. Once I discovered how much I enjoyed working with data, the decision became much easier.</p>
-      <p>At the same time, France had always been a personal dream. Moving abroad required courage and a willingness to step outside my comfort zone, but it also represented an opportunity to grow both professionally and personally. Choosing to come to France and pursue my master's degree became one of the most important decisions of my life.</p>
-      <p>Today, I see Industrial Engineering and Data Analysis as highly complementary disciplines. Industrial Engineering taught me how organizations work, how processes create value and how continuous improvement drives results. Data Analysis provides the tools to measure, understand and improve those processes using evidence.</p>
-      <p>This combination allows me to bring both business understanding and analytical thinking to a project. I enjoy connecting data with operational reality, translating complex information into actionable insights and identifying opportunities for improvement that create measurable impact.</p>
-      <p>For that reason, I don't see my career as a transition from one field to another. I see it as the natural evolution of skills that have always been connected.</p>
-    </div>
+    <div class="inner-body" id="blog1-content">
+      </div>
   </div>
 </div>
 
-<!-- ======================== BLOG 2 PAGE ======================== -->
 <div id="page-blog2" class="page">
   <div class="inner-page">
     <div class="inner-hero">
-      <button class="inner-back" onclick="showPage('main');scrollTo('blog')">
-        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>Back to blog
+      <button class="inner-back" onclick="navigateToSection('blog')">
+        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg><span id="lbl-back-blog2">Back to blog</span>
       </button>
-      <div class="inner-badge">Technical</div>
-      <h1 class="inner-title">SQL vs Python for data cleaning: what I've learned</h1>
-      <p class="inner-subtitle">Ilse Emerich · 2025</p>
+      <div class="inner-badge" id="blog2-cat-inner">Technical</div>
+      <h1 class="inner-title" id="blog2-title">SQL vs Python for data cleaning: what I've learned</h1>
+      <p class="inner-subtitle">Ilse Emerich · 2026</p>
     </div>
-    <div class="inner-body">
-      <p>One of the questions I hear most often from people starting in data is whether SQL or Python is better for data cleaning.</p>
-      <p>After working with both, my answer is usually the same. It depends on the problem.</p>
-      <p>When I first started working with data, I tended to think there had to be a single best tool. Over time I realized that the most effective analysts are not the ones who use one tool for everything. They are the ones who know when each tool makes sense.</p>
-      <p>SQL is often my first choice when the data already lives inside a database. It is fast, efficient and easy to understand. Tasks such as filtering records, removing duplicates, standardizing values or creating aggregated tables can often be done directly in SQL with very clean and readable code.</p>
-      <p>Python becomes especially valuable when the cleaning process is more complex. Working with multiple files, handling unusual formats, applying custom transformations or automating repetitive tasks can be much easier with libraries such as Pandas.</p>
-      <p>What surprised me the most was that the real question is rarely SQL or Python. In many projects, the best solution is SQL and Python.</p>
-      <p>I often use SQL to retrieve and structure the data and then use Python for additional transformations, validation or exploratory analysis. Combining both tools allows me to take advantage of the strengths of each one.</p>
-      <p>Another lesson I have learned is that data cleaning is not the most glamorous part of analytics, but it is often the most important. A dashboard, report or machine learning model can only be as reliable as the data behind it.</p>
-      <p>Today I spend less time asking which tool is better and more time asking which tool is more appropriate for the task at hand. That shift in mindset has probably helped me more than learning any specific function or library.</p>
-    </div>
+    <div class="inner-body" id="blog2-content">
+      </div>
   </div>
 </div>
 
-<!-- ======================== BLOG 3 PAGE ======================== -->
 <div id="page-blog3" class="page">
   <div class="inner-page">
     <div class="inner-hero">
-      <button class="inner-back" onclick="showPage('main');scrollTo('blog')">
-        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>Back to blog
+      <button class="inner-back" onclick="navigateToSection('blog')">
+        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg><span id="lbl-back-blog3">Back to blog</span>
       </button>
-      <div class="inner-badge">Career</div>
-      <h1 class="inner-title">Why the industry never mattered as much as the question behind the data</h1>
-      <p class="inner-subtitle">Ilse Emerich · 2025</p>
+      <div class="inner-badge" id="blog3-cat-inner">Career</div>
+      <h1 class="inner-title" id="blog3-title">Why the industry never mattered as much as the question behind the data</h1>
+      <p class="inner-subtitle">Ilse Emerich · 2026</p>
     </div>
-    <div class="inner-body">
-      <p>There is something I have noticed about myself over the years. No matter what role I was in or what sector I was working in, I always ended up asking the same kind of questions. Why is this happening? What does this number actually mean? What is the story behind this data?</p>
-      <p>I think that curiosity is what has driven my career more than anything else. Not just the technical side of working with data, but the genuine desire to understand what is going on inside an organization. Every dataset feels like a puzzle to me, and I find it hard to walk away without trying to understand what it is really saying.</p>
-      <p>My path has gone through very different environments. During my time at <a href="https://salud-digna.us/quienes-somos" target="_blank" class="inline-link">Salud Digna</a>, one of the most recognized healthcare organizations in Mexico and Latin America for making quality diagnostic services accessible to millions of people, I worked with operational KPIs on a scale that made the stakes feel very real. The data was not abstract. It represented processes, people and decisions that had a direct impact on how the organization served its patients. That experience taught me that data quality is not a technical concern. It is a responsibility.</p>
-      <p>Today I work at <a href="https://www.airliquide.com/fr/groupe/air-liquide-bref" target="_blank" class="inline-link">Air Liquide</a>, a world leader in gases, technologies and services for industry and health, as part of an HR team with strong connections to multiple business areas across an international region. The work involves training budget tracking, provider performance analysis and cross-functional reporting. What I find most interesting about working in HR with data is that people data is some of the most complex and meaningful data you can work with. It combines behavior, investment, organizational strategy and human development all at once. The collaboration across teams also means that the data needs to speak to very different audiences, which is one of my favorite challenges.</p>
-      <p>What I have realized through all of these experiences is that the industry was never really the point. The questions were. Whether the context is healthcare, operations, or people and learning, the analytical process is the same. You start with curiosity, you look for patterns, you try to understand the why, and then you find a way to communicate what you found so that it actually helps someone make a better decision.</p>
-      <p>That is what I love about data. It is a way of satisfying a very deep curiosity about how things work. And that curiosity, I think, does not belong to any one industry.</p>
-    </div>
+    <div class="inner-body" id="blog3-content">
+      </div>
   </div>
 </div>
 
 <script>
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+let currentLang = 'en';
+
 const content = {
   en: {
-    heroBio: "Trilingual Data Analyst (ES/FR/EN) with 4+ years of experience transforming complex datasets into actionable insights. Currently Data Analyst at Air Liquide, finishing my Master in Data Science & Business Intelligence at EDC Paris Business School.",
-    aboutText: "Trilingual Data Analyst (Spanish, French, English) with 4+ years of experience transforming complex datasets into actionable insights to support business decision-making in international environments. Naturally curious and continuously learning, with strong experience in building dashboards, defining KPIs, and communicating insights to cross-functional stakeholders. Industrial Engineer with a Master in Data Science & Business Intelligence, with solid expertise in Excel, SQL, Python, and data visualization."
+    navAbout: "About", navExpertise: "Expertise", navProjects: "Projects", navBlog: "Blog", navContact: "Contact",
+    status: "Open to opportunities",
+    heroTitle: "DATA ANALYST · PARIS, FRANCE",
+    heroBio: "Data Analyst with 4+ years of experience transforming complex datasets into actionable insights. Currently Data Analyst at Air Liquide, finishing my Master's Thesis in Data Science & Business Intelligence at EDC Paris Business School.",
+    btnGithub: "GitHub", btnContact: "Contact me",
+    aboutLbl: "About me", aboutTitle: "Who I am",
+    aboutText: "Trilingual Data Analyst (Spanish, French, English) with 4+ years of experience transforming complex datasets into actionable insights to support business decision-making in international environments. Naturally curious and continuously learning, with strong experience in building dashboards, defining KPIs, and communicating insights to cross-functional stakeholders. Industrial Engineer with a Master's Thesis in Data Science & Business Intelligence, with solid expertise in Excel, SQL, Python, and data visualization.",
+    factLoc: "Location", factRole: "Current role", valRole: "Data Analyst · Air Liquide",
+    factEdu: "Education", valEdu: "Master's Thesis in Data Science & BI · EDC Paris",
+    factLang: "Languages", valLang: "Spanish · French · English · German",
+    expLbl: "Expertise", expTitle: "What I do best",
+    expT1: "Business Intelligence & Data Visualization", expD1: "Building dashboards and KPI frameworks that help teams make faster, better decisions. From design to deployment.",
+    expT2: "Data Cleaning & ETL Pipelines", expD2: "Designing reliable pipelines that transform raw, messy data into clean, trustworthy sources.",
+    expT3: "SQL & Data Modeling", expD3: "Structuring and querying large datasets with a focus on data quality, governance, and multi-source consolidation.",
+    expT4: "Automation & Process Optimization", expD4: "Identifying manual bottlenecks and building automations that save time and reduce human error in reporting workflows.",
+    skillsLbl: "Skills & tools", skillsTitle: "Tech stack",
+    projLbl: "Projects", projTitle: "Featured work",
+    projT1: "Modeling the Temporal Persistence of Customer Sentiment from Online Reviews in E-Commerce Sales Forecasting",
+    projD1: "Quantitative research combining NLP and Deep Learning to analyze how the temporal persistence of customer sentiment from online reviews impacts sales forecasting accuracy in e-commerce. Built on an ETL pipeline processing 100k+ transactions, fine-tuned BERTimbau for sentiment classification, and combined Attention-based BiLSTM with XGBoost to capture temporal patterns across multiple forecasting horizons.",
+    badgeThesis: "Master's Thesis", arrowT1: "View details →",
+    projT2: "E-commerce Customer Churn Analysis with SQL, Power BI and Python",
+    projD2: "End-to-end analysis identifying churn patterns and key drivers across customer segments, with an interactive Power BI dashboard for business stakeholders.",
+    arrowT2: "View details →",
+    projT3: "Retail Sales Performance Analysis with Python, Power BI and SQL",
+    projD3: "Sales performance analysis tracking KPIs by region, product line, and segment to support strategic and operational decisions.",
+    arrowT3: "View details →",
+    blogLbl: "Blog", blogTitle: "Thoughts & learnings",
+    blogC1: "Career", blogT1: "From Industrial Engineer to Data Analyst: my career switch", blogP1: "How I went from studying Industrial Engineering in Mexico to working as a Data Analyst in Paris, and why I never really felt like I was switching fields.", readB1: "Read more →",
+    blogC2: "Technical", blogT2: "SQL vs Python for data cleaning: what I've learned", blogP2: "A practical comparison from real projects. When SQL is enough, when Python makes more sense, and how I learned to stop asking which tool is better.", readB2: "Read more →",
+    blogC3: "Career", blogT3: "Why the industry never mattered as much as the question behind the data", blogP3: "From healthcare KPIs to training budgets at a global company, what I have learned is that curiosity about the why behind the data travels with you everywhere.", readB3: "Read more →",
+    contactLbl: "Contact", contactTitle: "Let's connect",
+    backProj: "Back to projects", backBlog: "Back to blog", viewGh: "Dépôt GitHub",
+    thesisNotice: "This thesis is currently under review by my supervisor and pending final approval by EDC Paris Business School. The full document will be shared publicly once the process is complete. Thank you for your understanding.",
+    thesisH1: "Research Question", thesisP1: "To what extent does the usefulness of customer sentiment from online reviews persist over time when incorporated into sales forecasting models in e-commerce contexts?",
+    thesisH2: "Overview", thesisP2: "This research adopts a quantitative and hybrid approach combining primary and secondary data to analyse how customer reviews influence purchasing decisions and sales forecasting in e-commerce. The study is structured around three main components.",
+    thesisP3: "A primary survey with 174 respondents was designed to capture consumer perceptions on the credibility and temporal relevance of online reviews. The goal was to understand how people weigh reviews differently depending on how recent they are, and whether that perception translates into measurable purchasing behavior.",
+    thesisP4: "The transactional analysis is based on the Olist Brazilian e-commerce dataset, including orders, products and reviews. An ETL pipeline was built to process over 100,000 transactions, consolidating and validating the data before any modelling could begin.",
+    thesisP5: "The modelling phase combines NLP and forecasting techniques. Sentiment classification was performed using BERTimbau fine-tuned on 2,700 manually labelled reviews. The forecasting model integrates an Attention-based BiLSTM with XGBoost to capture temporal patterns and correct residual errors. An ablation study was conducted across three model configurations to measure the incremental impact of review metrics and sentiment on predictive accuracy, evaluated through MAE, RMSE and WMAPE across multiple forecasting horizons of 1, 7, 14 and 30 days.",
+    thesisH3: "Outils & technologies", thesisH4: "Dépôt GitHub", thesisP6: "The code and notebooks for this project are available on GitHub. The full thesis document will be added once approved.",
+    churnTitle: "E-commerce Customer Churn Analysis with SQL, Power BI and Python", churnSubtitle: "End-to-end churn analysis on an Indonesian e-commerce platform · 850,000+ transactions",
+    churnH1: "Overview", churnP1: "This project analyzes customer behavior on an Indonesian e-commerce platform to identify factors driving churn and propose effective retention strategies. The analysis covers over 850,000 transactions, integrating 4 primary data sources: customers, transactions, products, and clickstream data.",
+    churnP2: "The workflow follows a structured process moving from Business Understanding through ETL, EDA, Visualization and Modeling, transforming raw data into actionable business insights.",
+    churnH2: "Outils & technologies", churnH3: "Dépôt GitHub",
+    retailTitle: "Retail Sales Performance Analysis with Python, Power BI and SQL", retailSubtitle: "U.S.-based retail store · Sales trends, profitability and customer behavior",
+    retailH1: "Overview", retailP1: "This project analyzes retail sales in a U.S.-based store to uncover trends in revenue, profitability, and customer behavior. The analysis integrates multiple data sources, including sales orders, customers, products, and regional information.",
+    retailP2: "The workflow follows a structured process moving from Business Understanding through ETL, EDA, Statistical Forecasting and Visualization, generating insights to optimize revenue, forecast future sales, and support data-driven business strategies.",
+    retailH2: "Outils & technologies", retailH3: "Dépôt GitHub",
+    b1Text: "<p>When people hear Industrial Engineering and Data Analysis, they often think of two completely different fields. For me, they have always felt closely connected.</p><p>During my Industrial Engineering degree, I spent a lot of time studying probability, statistics and process analysis. Those subjects quickly became my favorite part of the program because they helped explain how decisions could be supported by evidence rather than intuition. At the same time, my education was strongly focused on continuous improvement methodologies such as Kaizen, Lean Manufacturing and Six Sigma. I learned how to identify inefficiencies, understand root causes and design better processes.</p><p>After graduation, my career naturally moved toward process coordination and process improvement roles. I genuinely enjoyed understanding how organizations operate and finding opportunities to make them work better. Looking back, those experiences gave me a very analytical way of thinking that still helps me today.</p><p>A turning point came when I had the opportunity to join <a href='https://salud-digna.us/quienes-somos' target='_blank' class='inline-link'>Salud Digna</a> as a Data Analyst. Salud Digna is one of the most recognized healthcare organizations in Mexico, providing affordable diagnostic and preventive health services to millions of people every year. Its impact extends beyond Mexico and its model has gained attention throughout Latin America because of the way it combines accessibility, efficiency and quality healthcare.</p><p>Working there allowed me to discover the real impact that data can have on decision making. Every project presented new challenges and new opportunities to learn. I had the chance to work with talented professionals who generously shared their knowledge and helped me grow. I remain deeply grateful to my managers, teammates and colleagues, many of whom I still consider friends today.</p><p>That experience confirmed something I had been feeling for a long time. I wanted to specialize in data.</p><p>Pursuing a master's degree had always been one of my personal goals, but I believed it was important to first understand what truly motivated me professionally. I think that clarity often comes only after entering the workforce and gaining real experience. Once I discovered how much I enjoyed working with data, the decision became much easier.</p><p>At the same time, France had always been a personal dream. Moving abroad required courage and a willingness to step outside my comfort zone, but it also represented an opportunity to grow both professionally and personally. Choosing to come to France and pursue my master's degree became one of the most important decisions of my life.</p><p>Today, I see Industrial Engineering and Data Analysis as highly complementary disciplines. Industrial Engineering taught me how organizations work, how processes create value and how continuous improvement drives results. Data Analysis provides the tools to measure, understand and improve those processes using evidence.</p><p>This combination allows me to bring both business understanding and analytical thinking to a project. I enjoy connecting data with operational reality, translating complex information into actionable insights and identifying opportunities for improvement that create measurable impact.</p><p>For that reason, I don't see my career as a transition from one field to another. I see it as the natural evolution of skills that have always been connected.</p>",
+    b2Text: "<p>One of the questions I hear most often from people starting in data is whether SQL or Python is better for data cleaning.</p><p>After working with both, my answer is usually the same. It depends on the problem.</p><p>When I first started working with data, I tended to think there had to be a single best tool. Over time I realized that the most effective analysts are not the ones who use one tool for everything. They are the ones who know when each tool makes sense.</p><p>SQL is often my first choice when the data already lives inside a database. It is fast, efficient and easy to understand. Tasks such as filtering records, removing duplicates, standardizing values or creating aggregated tables can often be done directly in SQL with very clean and readable code.</p><p>Python becomes especially valuable when the cleaning process is more complex. Working with multiple files, handling unusual formats, applying custom transformations or automating repetitive tasks can be much easier with libraries such as Pandas.</p><p>What surprised me the most was that the real question is rarely SQL or Python. In many projects, the best solution is SQL and Python.</p><p>I often use SQL to retrieve and structure the data and then use Python for additional transformations, validation or exploratory analysis. Combining both tools allows me to take advantage of the strengths of each one.</p><p>Another lesson I have learned is that data cleaning is not the most glamorous part of analytics, but it is often the most important. A dashboard, report or machine learning model can only be as reliable as the data behind it.</p><p>Today I spend less time asking which tool is better and more time asking which tool is more appropriate for the task at hand. That shift in mindset has probably helped me more than learning any specific function or library.</p>",
+    b3Text: "<p>There is something I have noticed about myself over the years. No matter what role I was in or what sector I was working in, I always ended up asking the same kind of questions. Why is this happening? What does this number actually mean? What is the story behind this data?</p><p>I think that curiosity is what has driven my career more than anything else. Not just the technical side of working with data, but the genuine desire to understand what is going on inside an organization. Every dataset feels like a puzzle to me, and I find it hard to walk away without trying to understand what it is really saying.</p><p>My path has gone through very different environments. During my time at <a href='https://salud-digna.us/quienes-somos' target='_blank' class='inline-link'>Salud Digna</a>, one of the most recognized healthcare organizations in Mexico and Latin America for making quality diagnostic services accessible to millions of people, I worked with operational KPIs on a scale that made the stakes feel very real. The data was not abstract. It represented processes, people and decisions that had a direct impact on how the organization served its patients. That experience taught me that data quality is not a technical concern. It is a responsibility.</p><p>Today I work at <a href='https://www.airliquide.com/fr/groupe/air-liquide-bref' target='_blank' class='inline-link'>Air Liquide</a>, a world leader in gases, technologies and services for industry and health, as part of an HR team with strong connections to multiple business areas across an international region. The work involves training budget tracking, provider performance analysis and cross-functional reporting. What I find most interesting about working in HR with data is that people data is some of the most complex and meaningful data you can work with. It combines behavior, investment, organizational strategy and human development all at once. The collaboration across teams also means that the data needs to speak to very different audiences, which is one of my favorite challenges.</p><p>What I have realized through all of these experiences is that the industry was never really the point. The questions were. Whether the context is healthcare, operations, or people and learning, the analytical process is the same. You start with curiosity, you look for patterns, you try to understand the why, and then you find a way to communicate what you found so that it actually helps someone make a better decision.</p><p>That is what I love about data. It is a way of satisfying a very deep curiosity about how things work. And that curiosity, I think, does not belong to any one industry.</p>"
   },
   fr: {
-    heroBio: "Analyste de données trilingue (ES/FR/EN) avec plus de 4 ans d'expérience. Actuellement chez Air Liquide, en fin de Master en Data Science & Business Intelligence à l'EDC Paris Business School.",
-    aboutText: "Analyste de données trilingue (espagnol, français, anglais), avec plus de 4 ans d'expérience dans la transformation de données complexes en insights actionnables afin de soutenir la prise de décision dans des environnements internationaux. Curieuse et en apprentissage continu, avec une solide expérience dans la création de dashboards, la définition de KPIs et la communication des résultats auprès d'équipes transverses. Ingénieure industrielle titulaire d'un Master en Data Science & Business Intelligence, avec une excellente maîtrise d'Excel, SQL, Python et de la visualisation de données."
+    navAbout: "À propos", navExpertise: "Expertise", navProjects: "Projets principaux", navBlog: "Réflexions & apprentissages", navContact: "Contact",
+    status: "Ouvert aux opportunités",
+    heroTitle: "ANALYSTE DE DONNÉES · PARIS, FRANCE",
+    heroBio: "Analyste de données avec plus de 4 ans d'expérience dans la transformation d'ensembles de données complexes en insights actionnables. Actuellement Analyste de données chez Air Liquide, en fin de Master en Data Science & Business Intelligence à l'EDC Paris Business School.",
+    btnGithub: "GitHub", btnContact: "Contactez-moi",
+    aboutLbl: "À propos", aboutTitle: "Qui je suis",
+    aboutText: "Curieuse et passionnée par l'apprentissage de nouvelles technologies, je suis une analyste de données trilingue (espagnol, français, anglais) avec plus de 4 ans d'expérience dans la transformation de données complexes en insights actionnables afin de soutenir la prise de décision dans des environnements internationaux. Forte d'une solide expérience dans la création de dashboards, la définition de KPIs et la communication des résultats auprès d'équipes transverses. Ingénieure industrielle titulaire d'un Mémoire de Master en Data Science & Business Intelligence, avec une excellente maîtrise d'Excel, SQL, Python et de la visualisation de données.",
+    factLoc: "Emplacement", factRole: "Poste actuel", valRole: "Data Analyst · Air Liquide",
+    factEdu: "Éducation", valEdu: "Mémoire de Master Data Science & BI · EDC Paris",
+    factLang: "Langues", valLang: "Espagnol · Français · Anglais · Allemand",
+    expLbl: "Expertise", expTitle: "Mes domaines d'expertise",
+    expT1: "Business Intelligence & Visualisation de Données", expD1: "Création de tableaux de bord et d'indicateurs clés de performance (KPI) pour aider les équipes à décider plus rapidement et plus efficacement. Du design au déploiement.",
+    expT2: "Nettoyage de Données & Pipelines ETL", expD2: "Conception de pipelines robustes pour transformer des données brutes et complexes en sources propres et exploitables.",
+    expT3: "SQL & Modélisation de Données", expD3: "Structuration et interrogation de grandes bases de données avec un accent sur la qualité, la gouvernance et la consolidation multisource.",
+    expT4: "Automatisation & Optimisation de Processus", expD4: "Identification des goulots d'étranglement manuels et développement d'automatisation pour optimiser les rapports récurrents.",
+    skillsLbl: "Compétences", skillsTitle: "Outils & technologies",
+    projLbl: "Projets", projTitle: "Projets principaux",
+    projT1: "Modélisation de la persistance temporelle du sentiment des clients issus des avis en ligne dans les prévisions de ventes e-commerce",
+    projD1: "Recherche quantitative combinant le NLP et le Deep Learning pour analyser l'impact du sentiment des clients sur la précision des prévisions de vente. Création d'un pipeline ETL traitant plus de 100 000 transactions, fine-tuning de BERTimbau pour la classification des sentiments, et modélisation hybride avec un BiLSTM à mécanisme d'attention et XGBoost.",
+    badgeThesis: "Mémoire de Master", arrowT1: "Voir les détails →",
+    projT2: "Analyse du Churn Client en E-commerce",
+    projD2: "Analyse de bout en bout identifiant les comportements liés au churn et les principaux facteurs de perte de clients, avec un tableau de bord Power BI interactif.",
+    arrowT2: "Voir les détails →",
+    projT3: "Retail Sales Performance Analysis with Python, Power BI and SQL",
+    projD3: "Analyse de performance commerciale mesurant les KPIs par région, ligne de produits et segment pour appuyer les décisions stratégiques.",
+    arrowT3: "Voir les détails →",
+    blogLbl: "Blog", blogTitle: "Réflexions & apprentissages",
+    blogC1: "Carrière", blogT1: "D'ingénieure industrielle à data analyst : ma transition de carrière", blogP1: "Comment je suis passée des études d'ingénierie industrielle au Mexique à un poste de Data Analyst à Paris, et why je n'ai jamais eu l'impression de changer de domaine.", readB1: "Lire la suite →",
+    blogC2: "Technique", blogT2: "SQL vs Python pour le nettoyage de données : ce que j'ai appris", blogP2: "Une comparaison pratique issue de projets réels. Quand SQL suffit, quand Python est indispensable, et comment j'ai appris à ne plus chercher l'outil parfait.", readB2: "Lire la suite →",
+    blogC3: "Carrière", blogT3: "Pourquoi le secteur d'activité importe peu face à la question cachée derrière les données", blogP3: "Des KPIs de santé aux budgets de formation d'un grand groupe, j'ai appris que la curiosité de comprendre le 'pourquoi' voyage partout avec vous.", readB3: "Lire la suite →",
+    contactLbl: "Contact", contactTitle: "Restons connectés",
+    backProj: "Retour aux projets", backBlog: "Retour au blog", viewGh: "Dépôt GitHub",
+    thesisNotice: "Ce mémoire est actuellement en cours d'évaluation par mon directeur de mémoire et en attente de l'approbation finale de l'EDC Paris Business School. Le document complet sera partagé publiquement dès que le processus sera terminé. Merci de votre compréhension.",
+    thesisH1: "Question de Recherche", thesisP1: "Dans quelle mesure l'utilité du sentiment des clients issus des avis en ligne persiste-t-elle dans le temps lorsqu'elle est intégrée à des modèles de prévision des ventes en e-commerce ?",
+    thesisH2: "Aperçu du Projet", thesisP2: "Cette recherche adopte une approche quantitative et hybride combinant données primaires et secondaires pour analyser comment les avis clients influencent les décisions d'achat et la prévision des ventes. L'étude est structurée autour de trois axes principaux.",
+    thesisP3: "Une enquête primaire auprès de 174 répondants a été conçue pour capter la perception des consommateurs sur la crédibilité et la pertinence temporelle des avis en ligne. L'objectif était de comprendre comment les internautes pondèrent les avis selon leur récence.",
+    thesisP4: "L'analyse transactionnelle s'appuie sur le jeu de données e-commerce brésilien Olist couvrant la période 2016-2018. Un pipeline ETL a été développé pour traiter plus de 100 000 transactions, consolidant et validant les données avant la modélisation.",
+    thesisP5: "La phase de modélisation associe des techniques de NLP et de prévision. La classification des sentiments a été réalisée à l'aide de BERTimbau, ajusté sur 2 700 avis labellisés manuellement. Le modèle intègre un BiLSTM basé sur l'attention avec XGBoost pour corriger les erreurs résiduelles sur des horizons de 1, 7, 14 et 30 jours.",
+    thesisH3: "Outils & technologies", thesisH4: "Dépôt GitHub", thesisP6: "Le code source et les notebooks de ce projet sont disponibles sur GitHub. Le document complet du mémoire sera ajouté après validation.",
+    churnTitle: "Analyse du Churn Client en E-commerce", churnSubtitle: "Analyse de bout en bout de la perte de clients sur une plateforme e-commerce indonésienne · Plus de 850 000 transactions",
+    churnH1: "Aperçu du Projet", churnP1: "Ce projet analyse le comportement des clients sur une plateforme e-commerce indonésienne pour identifier les facteurs de churn et proposer des stratégies de rétention. L'analyse couvre 850 000 transactions, intégrant 4 sources : clients, transactions, produits et données de parcours.",
+    churnP2: "Le flux de travail suit un processus structuré allant de la compréhension des enjeux business à l'ETL, l'EDA, la visualisation et la modélisation.",
+    churnH2: "Outils & technologies", churnH3: "Dépôt GitHub",
+    retailTitle: "Retail Sales Performance Analysis with Python, Power BI and SQL", retailSubtitle: "Magasin de détail basé aux États-Unis · Tendances des ventes, rentabilité et comportement client",
+    retailH1: "Aperçu du Projet", retailP1: "Ce projet analyse les ventes d'un magasin américain afin de dégager les tendances de revenus et le comportement client. L'analyse intègre les commandes, produits et informations régionales.",
+    retailP2: "Le flux suit une approche structurée combinant l'ETL, l'Analyse Exploratoire (EDA), les prévisions statistiques et la visualisation pour optimiser le chiffre d'affaires.",
+    retailH2: "Outils & technologies", retailH3: "Dépôt GitHub",
+    b1Text: "<p>Quand on parle d'ingénierie industrielle et d'analyse de données, on pense souvent à deux domaines totalement distincts. Pour moi, ils ont toujours été profondément connectés.</p><p>Dans le cadre de mon diplôme d'ingénieure industrielle, une grande place a été accordée aux probabilités, aux statistiques et à l'analyse des processus.</p><p>Ces expériences m'ont permis de développer un esprit très analytique qui m'accompagne au quotidien. Une étape clé de mon parcours a été mon arrivée chez <a href='https://salud-digna.us/quienes-somos' target='_blank' class='inline-link'>Salud Digna</a> en tant que Data Analyst.</p><p>Cette expérience a confirmé ce que je ressentais et m'a poussée à me spécialiser pleinement dans la data.</p><p>Poursuivre un Master avait toujours fait partie de mes objectifs personnels, mais je trouvais important de comprendre d'abord ce qui me motivait réellement sur le plan professionnel. Je pense que cette clarté vient souvent après avoir intégré le monde du travail et acquis une véritable expérience sur le terrain. Une fois que j'ai découvert à quel point j'aimais travailler avec les données, la décision est devenue beaucoup plus évidente.</p><p>En parallèle, s'installer en France était un rêve que je portais depuis des années. Partir à l'étranger demandait du courage, mais c'était l'opportunité idéale pour grandir. Venir en France pour suivre mon Master reste l'une des décisions les plus importantes de ma vie.</p><p>Cette complémentarité me permet d'apporter à la fois une solide vision stratégique et une rigueur analytique à chaque projet. J'aime lier les données à la réalité opérationnelle, traduire des informations complexes en insights actionnables et identifier des opportunités d'amélioration qui génèrent un impact mesurable. C'est pourquoi je ne considère pas ma carrière comme un changement radical de voie puisque j'y vois le développement logique de compétences profondément connectées depuis le début.</p>",
+    b2Text: "<p>L'une des questions les plus fréquentes chez les débutants en data is de savoir si SQL ou Python est le meilleur outil pour le nettoyage de données.</p><p>Après avoir pratiqué les deux, ma réponse est invariable : tout dépend du problème à résoudre.</p><p>À mes débuts, je pensais qu'il devait y avoir un outil absolu. Avec le temps, j'ai compris que les meilleurs analystes ne sont pas ceux qui utilisent le même outil pour tout, mais ceux qui savent choisir le plus adapté au contexte.</p><p>SQL est mon premier choix lorsque les données résident déjà dans une base de données. C'est rapide, performant et lisible pour filtrer, supprimer les doublons, standardiser des valeurs ou créer des tables d'agrégation.</p><p>Python prend toute sa valeur quand le nettoyage devient complexe : manipuler des fichiers multiples, gérer des formats atypiques ou automatiser des tâches répétitives complexes via des librairies comme Pandas.</p><p>La vraie surprise a été de réaliser que la question n'est presque jamais SQL ou Python, mais plutôt SQL et Python.</p><p>J'utilise très souvent SQL pour extraire et structurer la donnée, puis Python pour les transformations avancées, les validations ou l'analyse exploratoire fine. Combiner les deux permet de tirer profit des forces de chacun.</p><p>Le nettoyage de données n'est pas la partie la plus glamour de notre métier, mais c'est la plus cruciale. Un tableau de bord ou un modèle de machine learning ne sera jamais plus fiable que la donnée qui l'alimente.</p><p>Aujourd'hui, je passe moins de temps à me demander quel outil est le meilleur et plus de temps à chercher lequel est le plus adapté. Ce changement d'état d'esprit m'a probablement plus apporté que l'apprentissage de n'importe quelle fonction ou bibliothèque.</p>",
+    b3Text: "<p>Il y a un trait marquant que j'ai observé chez moi au fil des ans : peu importe mon poste ou mon secteur d'activité, je finis toujours par poser les mêmes questions. Pourquoi cela se produit-il ? Que signifie réellement ce chiffre ? Quelle l'histoire cachée derrière ces données ?</p><p>Je pense que cette curiosité a guidé ma carrière bien plus que l'aspect purement technique. Chaque jeu de données est un puzzle que je ne peux m'empêcher de résoudre.</p><p>Mon parcours m'a menée dans des environnements très différents. Durant mon expérience chez <a href='https://salud-digna.us/quienes-somos' target='_blank' class='inline-link'>Salud Digna</a>, l'une des organisations de santé les plus reconnues au Mexique et en Amérique latine pour avoir rendu les services de diagnostic de qualité accessibles à des millions de personnes, j'ai travaillé avec des KPIs opérationnels à une échelle qui rendait les enjeux très concrets. Les données n'avaient rien d'abstrait. Elles représentaient des processus, des personnes et des décisions qui avaient un impact direct sur la manière dont l'organisation servait ses patients. Cette expérience m'a appris que la qualité des données n'est pas un problème technique. C'est une responsabilité.</p><p>Aujourd'hui, je travaille chez <a href='https://www.airliquide.com/fr/groupe/air-liquide-bref' target='_blank' class='inline-link'>Air Liquide</a>, leader mondial des gaz, technologies et services pour l'industrie et la santé, au sein d'une équipe RH qui collabore de manière transversale avec de multiples entités internationales.</p><p>À travers toutes ces expériences, j'ai réalisé que le secteur d'activité n'a jamais été le plus important car ce sont les questions qui comptent vraiment. Que le contexte soit celui de la santé, des opérations ou des ressources humaines et de l'apprentissage, la démarche analytique reste la même. Tout commence par de la curiosité, puis on cherche des schémas, on s'efforce de comprendre le pourquoi, and enfin on trouve le moyen de communiquer ces découvertes afin d'aider concrètement à prendre de meilleures décisions.</p><p>C'est précisément ce qui me passionne dans la data puisqu'elle permet de satisfaire une curiosité profonde sur le fonctionnement de ce qui nous entoure. Et cette curiosité n'appartient selon moi à aucun secteur en particulier.</p>"
   }
 };
 
-function showPage(name) {
+function navigateToSection(sectionId) {
+  const isMainPageActive = document.getElementById('page-main').classList.contains('active');
+
+  if (!isMainPageActive) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-main').classList.add('active');
+    window.scrollTo({top: 0, behavior: 'instant'});
+
+    if (sectionId) {
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({behavior: 'smooth'});
+      }, 100);
+    }
+  } else {
+    if (sectionId) {
+      const el = document.getElementById(sectionId);
+      if (el) el.scrollIntoView({behavior: 'smooth'});
+    } else {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  }
+
+  document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+  if (sectionId) {
+    const activeLink = document.getElementById('nav-' + sectionId);
+    if (activeLink) activeLink.classList.add('active');
+  }
+}
+
+function showPage(pageName) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + name).classList.add('active');
-  window.scrollTo({top: 0, behavior: 'smooth'});
-}
-
-function scrollTo(id) {
-  setTimeout(() => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({behavior: 'smooth'});
-  }, 50);
-}
-
-function scrollToTop() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
+  const targetPage = document.getElementById('page-' + pageName);
+  if (targetPage) {
+    targetPage.classList.add('active');
+  }
+  window.scrollTo({top: 0, behavior: 'instant'});
 }
 
 function setLang(lang, event) {
+  currentLang = lang;
+  
+  document.getElementById('nav-about').textContent = content[lang].navAbout;
+  document.getElementById('nav-expertise').textContent = content[lang].navExpertise;
+  document.getElementById('nav-projects').textContent = content[lang].navProjects;
+  document.getElementById('nav-blog').textContent = content[lang].navBlog;
+  document.getElementById('nav-contact').textContent = content[lang].navContact;
+  
+  document.getElementById('lbl-status').textContent = content[lang].status;
+  document.getElementById('lbl-hero-title').textContent = content[lang].heroTitle;
   document.getElementById('hero-bio').textContent = content[lang].heroBio;
+  document.getElementById('btn-github').textContent = content[lang].btnGithub;
+  document.getElementById('btn-contact').textContent = content[lang].btnContact;
+  
+  document.getElementById('lbl-about-lbl').textContent = content[lang].aboutLbl;
+  document.getElementById('about-title').textContent = content[lang].aboutTitle;
   document.getElementById('about-text').textContent = content[lang].aboutText;
+  document.getElementById('lbl-fact-loc').textContent = content[lang].factLoc;
+  document.getElementById('lbl-fact-loc2').textContent = content[lang].factLoc;
+  document.getElementById('lbl-fact-role').textContent = content[lang].factRole;
+  document.getElementById('val-fact-role').textContent = content[lang].valRole;
+  document.getElementById('lbl-fact-edu').textContent = content[lang].factEdu;
+  document.getElementById('val-fact-edu').textContent = content[lang].valEdu;
+  document.getElementById('lbl-fact-lang').textContent = content[lang].factLang;
+  document.getElementById('val-fact-lang').textContent = content[lang].valLang;
+  
+  document.getElementById('lbl-exp-lbl').textContent = content[lang].expLbl;
+  document.getElementById('lbl-exp-title').textContent = content[lang].expTitle;
+  document.getElementById('exp-t1').textContent = content[lang].expT1;
+  document.getElementById('exp-d1').textContent = content[lang].expD1;
+  document.getElementById('exp-t2').textContent = content[lang].expT2;
+  document.getElementById('exp-d2').textContent = content[lang].expD2;
+  document.getElementById('exp-t3').textContent = content[lang].expT3;
+  document.getElementById('exp-d3').textContent = content[lang].expD3;
+  document.getElementById('exp-t4').textContent = content[lang].expT4;
+  document.getElementById('exp-d4').textContent = content[lang].expD4;
+  
+  document.getElementById('lbl-skills-lbl').textContent = content[lang].skillsLbl;
+  document.getElementById('lbl-skills-title').textContent = content[lang].skillsTitle;
+  
+  document.getElementById('lbl-proj-lbl').textContent = content[lang].projLbl;
+  document.getElementById('lbl-proj-title').textContent = content[lang].projTitle;
+  document.getElementById('proj-t1').textContent = content[lang].projT1;
+  document.getElementById('proj-d1').textContent = content[lang].projD1;
+  document.getElementById('lbl-badge-thesis').textContent = content[lang].badgeThesis;
+  document.getElementById('lbl-arrow-t1').textContent = content[lang].arrowT1;
+  document.getElementById('proj-t2').textContent = content[lang].projT2;
+  document.getElementById('proj-d2').textContent = content[lang].projD2;
+  document.getElementById('lbl-arrow-t2').textContent = content[lang].arrowT2;
+  document.getElementById('proj-t3').textContent = content[lang].projT3;
+  document.getElementById('proj-d3').textContent = content[lang].projD3;
+  document.getElementById('lbl-arrow-t3').textContent = content[lang].arrowT3;
+  
+  document.getElementById('lbl-blog-lbl').textContent = content[lang].blogLbl;
+  document.getElementById('lbl-blog-title').textContent = content[lang].blogTitle;
+  document.getElementById('blog-c1').textContent = content[lang].blogC1;
+  document.getElementById('blog-t1').textContent = content[lang].blogT1;
+  document.getElementById('blog-p1').textContent = content[lang].blogP1;
+  document.getElementById('lbl-read-b1').textContent = content[lang].readB1;
+  document.getElementById('blog-c2').textContent = content[lang].blogC2;
+  document.getElementById('blog-t2').textContent = content[lang].blogT2;
+  document.getElementById('blog-p2').textContent = content[lang].blogP2;
+  document.getElementById('lbl-read-b2').textContent = content[lang].readB2;
+  document.getElementById('blog-c3').textContent = content[lang].blogC3;
+  document.getElementById('blog-t3').textContent = content[lang].blogT3;
+  document.getElementById('blog-p3').textContent = content[lang].blogP3;
+  document.getElementById('lbl-read-b3').textContent = content[lang].readB3;
+  
+  document.getElementById('lbl-contact-lbl').textContent = content[lang].contactLbl;
+  document.getElementById('lbl-contact-title').textContent = content[lang].contactTitle;
+
+  document.getElementById('lbl-back-proj1').textContent = content[lang].backProj;
+  document.getElementById('lbl-back-proj2').textContent = content[lang].backProj;
+  document.getElementById('lbl-back-proj3').textContent = content[lang].backProj;
+  document.getElementById('lbl-back-blog1').textContent = content[lang].backBlog;
+  document.getElementById('lbl-back-blog2').textContent = content[lang].backBlog;
+  document.getElementById('lbl-back-blog3').textContent = content[lang].backBlog;
+  document.getElementById('lbl-view-gh1').textContent = content[lang].viewGh;
+  document.getElementById('lbl-view-gh2').textContent = content[lang].viewGh;
+  document.getElementById('lbl-view-gh3').textContent = content[lang].viewGh;
+
+  document.getElementById('lbl-badge-thesis-inner').textContent = content[lang].badgeThesis;
+  document.getElementById('thesis-title').textContent = content[lang].projT1;
+  document.getElementById('thesis-notice').textContent = content[lang].thesisNotice;
+  document.getElementById('thesis-h1').textContent = content[lang].thesisH1;
+  document.getElementById('thesis-p1').textContent = content[lang].thesisP1;
+  document.getElementById('thesis-h2').textContent = content[lang].thesisH2;
+  document.getElementById('thesis-p2').textContent = content[lang].thesisP2;
+  document.getElementById('thesis-p3').textContent = content[lang].thesisP3;
+  document.getElementById('thesis-p4').textContent = content[lang].thesisP4;
+  document.getElementById('thesis-p5').textContent = content[lang].thesisP5;
+  document.getElementById('thesis-h3').textContent = content[lang].thesisH3;
+  document.getElementById('thesis-h4').textContent = content[lang].thesisH4;
+  document.getElementById('thesis-p6').textContent = content[lang].thesisP6;
+
+  document.getElementById('lbl-badge-proj-inner1').textContent = content[lang].blogC1; 
+  document.getElementById('churn-title').textContent = content[lang].churnTitle;
+  document.getElementById('churn-subtitle').textContent = content[lang].churnSubtitle;
+  document.getElementById('churn-h1').textContent = content[lang].churnH1;
+  document.getElementById('churn-p1').textContent = content[lang].churnP1;
+  document.getElementById('churn-p2').textContent = content[lang].churnP2;
+  document.getElementById('churn-h2').textContent = content[lang].thesisH3;
+  document.getElementById('churn-h3').textContent = content[lang].thesisH4;
+
+  document.getElementById('lbl-badge-proj-inner2').textContent = content[lang].blogC1;
+  document.getElementById('retail-title').textContent = content[lang].retailTitle;
+  document.getElementById('retail-subtitle').textContent = content[lang].retailSubtitle;
+  document.getElementById('retail-h1').textContent = content[lang].retailH1;
+  document.getElementById('retail-p1').textContent = content[lang].retailP1;
+  document.getElementById('retail-p2').textContent = content[lang].retailP2;
+  document.getElementById('retail-h2').textContent = content[lang].thesisH3;
+  document.getElementById('retail-h3').textContent = content[lang].thesisH4;
+
+  document.getElementById('blog1-cat-inner').textContent = content[lang].blogC1;
+  document.getElementById('blog1-title').textContent = content[lang].blogT1;
+  document.getElementById('blog1-content').innerHTML = content[lang].b1Text;
+
+  document.getElementById('blog2-cat-inner').textContent = content[lang].blogC2;
+  document.getElementById('blog2-title').textContent = content[lang].blogT2;
+  document.getElementById('blog2-content').innerHTML = content[lang].b2Text;
+
+  document.getElementById('blog3-cat-inner').textContent = content[lang].blogC3;
+  document.getElementById('blog3-title').textContent = content[lang].blogT3;
+  document.getElementById('blog3-content').innerHTML = content[lang].b3Text;
+
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
   event.target.classList.add('active');
 }
+
+// Inicialización por defecto en inglés
+setLang('en', {target: document.getElementById('btn-en')});
 
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', function() {
